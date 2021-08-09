@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  api:
+    build:
+      context: ./codigo
+      dockerfile: Dockerfile
+    ports:
+      - 80:80 
+      
+      # espelha a porta 80 da sua maquina para a 80 do container
